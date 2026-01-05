@@ -10,7 +10,7 @@ from app.config import settings
 from app.db.database import Base
 
 # Import all models here so Alembic can detect them
-# from app.models import user, tweet, preferences
+from app.models import Preferences, StyleProfile, TweetHistory, User  # noqa: F401
 
 # Alembic Config object
 config = context.config
